@@ -29,17 +29,33 @@ main {
 }
 
 .picture {
-  position: relative;
+  position: absolute;
   display: block;
   height: 3.5rem;
   width: 5.3rem;
   background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1581462490/slide_film_12_qa5w4w.jpg");
   mix-blend-mode: darken(30%);
-  filter: hue-rotate(40deg) contrast(110%) brightness(90%);
+  filter: hue-rotate(40deg) contrast(110%) brightness(100%);
   background-size: cover;
   margin-top: 0.9rem;
   border-style: solid;
   color: gray;
+  border-width: 6px;
+  border-radius: 2%;
+}
+
+.picture-glitter {
+  position: absolute;
+  display: block;
+  margin-top: 0.9rem;
+  height: 3.5rem;
+  width: 5.3rem;
+  background-color: cyan;
+  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1589233049/glitterbackground2_vvtl39.jpg");
+  background-size: cover;
+  filter: opacity(30%) contrast(100%);
+  border-style: solid;
+  color: white;
   border-width: 6px;
   border-radius: 2%;
 }
