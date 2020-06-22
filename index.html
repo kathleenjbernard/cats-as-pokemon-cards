@@ -1,8 +1,6 @@
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css"/>
-    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
 <header>
   <div class="title"></div>
@@ -15,9 +13,36 @@
   <div class="small-text" id="hp-label">HP</div>
   <div class="hp" id="hp">HP</div>
   <div class="name" id="name">Name:</div>
-  <div class="attack-text" id="attack1">Attack1</div>
+  <section class="grid-container"> <!--begin card grid-->
+    <div class="cell-1">
+      <div class="energy-balls-grid" id="energy-balls-grid-one"> <!--begin energy balls grid-->
+        <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1590087802/fish_idbpln.png" class="energy-balls" id="energy-ball-one">
+      <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1590087802/fish_idbpln.png" class="energy-balls" id="energy-ball-two">
+        
+      </div>
+
+    </div>
+
+    <div class="attack-text" id="attack1">Attack1</div>
   <div class="attack-power" id="attackPower1">0</div>
-  <div class="attack-text" id="attack2">Attack2</div>
-  <div class="attack-power" id="attackPower2">0</div>
+        
+    <div class="cell-4" class="row-2">
+      <div class="energy-balls-grid" id="energy-balls-grid-two"> <!--begin energy balls grid-->
+        <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1590087802/fish_idbpln.png" class="energy-balls" id="energy-ball-one">
+      <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1590087802/fish_idbpln.png" class="energy-balls" id="energy-ball-two">
+        <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1590087802/fish_idbpln.png" class="energy-balls" id="energy-ball-three">
+        <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1590087802/fish_idbpln.png" class="energy-balls" id="energy-ball-four">
+  </div>
+    </div>
+    <div class="inner-card-grid" class="row-2"> <!--inner card grid-->
+    <div class="attack-text" id="attack2">Attack2div</div>
+      <p class="attack-text" id="attack-description2">Flip a coin. If heads, the opponent is now paralyzed.</p>
+    </div> <!--end of inner card grid-->
+    </div>
+  <div class="attack-power" class="row-2" id="attackPower2">0</div>
+  </section>
+  <section class="button-container">
+  <button id="button">Make a new card</button>
+  </section>
 </main>
 </html>
