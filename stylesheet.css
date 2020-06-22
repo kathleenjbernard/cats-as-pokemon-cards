@@ -4,7 +4,6 @@ html {
 
 .title {
   font-size: 50%;
-  padding-bottom: 0.5rem;
 }
 
 main {
@@ -13,14 +12,19 @@ main {
   font-family: 'jost', sans-serif;
 }
 
+img {
+  display: inline;
+}
+
 .card-background {
   position: absolute;
   display: block;
   height: 8.3rem; /**in real life, 1rem = 1 cm **/
   width: 5.7rem;
   background-image: 
-    repeating-linear-gradient(to top left, transparent 40%, gray, transparent),
-     repeating-linear-gradient(to top right, transparent 50%, #FAEFE6, transparent);
+    repeating-linear-gradient(to top left, transparent 30%, #FAEFE6, transparent),
+     repeating-linear-gradient(to bottom right, #FAEFE6, transparent 65%, #FAEFE6, transparent),
+     repeating-linear-gradient(to bottom left, transparent 45%, #FAEFE6 45%, transparent 13%);
   background-color: purple;
   border-radius: 3%;
   border-style: solid;
@@ -65,7 +69,7 @@ main {
   display: block;
   font-size: 0.4rem;
   margin-top: 0.35rem;
-  margin-left: 2rem;
+  margin-left: 2.3rem;
 }
 
 .stage {
@@ -88,12 +92,13 @@ main {
 .small-text {
   font-size: 25%;
   font-weight: 800;
+  padding-right: 5px;
 }
 
 #hp-label {
   position: absolute;
   margin-top: 0.5rem;
-  margin-left: 1.5rem;
+  margin-left: 1.7rem;
 }
 
 .name {
@@ -105,35 +110,119 @@ main {
   margin-left: -1.5rem;
 }
 
-.attack-text {
+.grid-container { /*grid for entire bottom half of card*/
+  display: grid;
   position: absolute;
-  font-size: 40%;
+  height: 3.6rem;
+  width: 5.6rem;
+  margin-top: 4.6rem;
+  padding-top: 0.3rem;
+  grid-template-columns: 1.5rem 1fr 1rem;
+  grid-template-rows: 1.3rem 1.3rem 1rem;
+  justify-items: start;
+  align-items: center;
+}
+
+.energy-balls-grid {
+  display: grid;
+  width: 1rem;
+  height: 1rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  
+}
+
+.energy-balls {
+  position: relative;
+  display: flex;
+  height: 30px;
+  width: auto;
+  padding-top: 0px;
+  align-self: center;
+  justify-self: center;
+  filter: hue-rotate(220deg);
+}
+
+#energy-balls-grid-one {
+  padding: 5px;
+  padding-left: 15px;
+}
+
+#energy-balls-grid-two {
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.row-2 {
+  padding-top: 15px;
+}
+
+#energy-balls-cell-1 {
+  align-self: start;
+  justify-self: start;
+  padding: 3px;
+}
+
+.attack-text {
+  color: black;
+  font-size: 30%;
+  padding-top: 7px;
+  font-family: 'Noto Sans';
+  font-weight: 800;
+  line-height: 0.27rem;
+  letter-spacing: -0.9px;
+  align-self: start;
 }
 
 #attack1 {
-  margin-top: 5rem;
+  padding-top: 17px;
 }
 
 #attack2 {
-  margin-top: 6.5rem;
+}
+
+.inner-card-grid { /*for second attack name and description*/
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#attack-description2 {
+  margin-top: 0px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 27%;
+  letter-spacing: -0.9px;
+}
+
+.attack-power {
+  font-size: 40%;
+  padding-right: 2px;
+  padding-left: 5px;
+  align-self: start;
+  justify-self: center;
 }
 
 #attackPower1 {
-  position: absolute;
-  margin-top: 5rem;
-  margin-left: 2rem;
-  font-size: 40%;
+  padding-top: 9px;
 }
 
 #attackPower2 {
-  position: absolute;
-  margin-top: 6.5rem;
-  margin-left: 2rem;
-  font-size: 40%;
+ align-self: center;
 }
 
-form {
+.row-1 {
+  border-bottom: solid;
+  border-width: 2px;
+}
+
+button {
+  display: block;
   position: absolute;
-  margin-top: 9rem;
- align-content: center;
+  margin-top: 90vh;
+  align-self: center;
+  margin-left: -1rem;
+  margin-right: 0;
+  font-size: 12pt;
 }
